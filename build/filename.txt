@@ -1,0 +1,4 @@
+Name	Surname	Address	Index	Pesel	Gender
+Adam Kowalski Gdansk 123 00243059988 Male
+Ewa Nowak Poznan 123 57080162573 Female
+Marian Kozak Warszawa 568 57122543212 Male
