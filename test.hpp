@@ -14,4 +14,5 @@ void sortbyPesel(std::vector<Student> data);
 void removeByIndex(std::vector<Student> data);
 void PeselValidation(const std::string &pesel);
 void AddingRecord(std::vector<Student> data);
+
 };
