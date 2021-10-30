@@ -13,13 +13,17 @@ int main()
     Student student;
 
 
-    std::vector<Person*> persons;
+    // std::vector<Person*> persons;
     Person & perEmp = employee;
     Person & perStu = student;
 
-    persons.push_back(&employee);
-    persons.push_back(&student);
+    // persons.push_back(&employee);
+    // persons.push_back(&student);
 
+    University university;
+    university.addPerson(perStu);
+    university.addPerson(perEmp);
+    university.DisplayDB();
     // const Student Adam("Adam", "Kowalski", "Gdansk", 123, "00243059988", "Male");
     // const Student Ewa("Ewa", "Nowak", "Poznan", 123, "57080162573", "Female");
     // const Student Rafal("Rafal", "Malinowski", "Wroclaw", 789, "93032497982", "Male");

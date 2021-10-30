@@ -2,44 +2,47 @@
 #include <algorithm>
 #include <string>
 #include "Student.hpp"
+#include "Person.hpp"
 
-// University::University()
-// {
-//     student_list_.reserve(20);
-// }
 
-// University::University(const std::vector<Student> student_list)
+University::University()
+{
+    persons_.reserve(20);
+}
+
+// University::University(const std::vector<Person*> student_list)
 //     : student_list_(student_list)
 // {
 // }
 
-// void University::addStudent(const Student &student)
-// {
-//     student_list_.push_back(student);
-// }
+void University::addPerson( Person &person)
+{
+    persons_.push_back(&person);
+}
 
-// void University::DisplayDB()
-// {
-//     if (student_list_.empty())
-//     {
-//         std::cout<<"No data to display.\n";
-//     }
-//     else
-//     {
-//         for (const auto &el : student_list_)
-//         {
-//             std::cout<<el.getName()<<"\t";
-//             std::cout<<el.getSurname()<<"\t";
-//             std::cout<<el.getAddress()<<"\t";
-//             std::cout<<el.getIndex()<<"\t";
-//             std::cout<<el.getPesel()<<"\t";
-//             std::cout<<el.getGender()<<"\t";
-//             std::cout<<"\n";
-//         }
+void University::DisplayDB()
+{
+    if (persons_.empty())
+    {
+        std::cout<<"No data to display.\n";
+    }
+    else
+    {
+      persons_[0]->getName();
+        // for (const auto &el : persons_)
+        // {
+        //     std::cout<<el.getName()<<"\t";
+        //     std::cout<<el.getSurname()<<"\t";
+        //     std::cout<<el.getAddress()<<"\t";
+        //     std::cout<<el.getIndex()<<"\t";
+        //     std::cout<<el.getPesel()<<"\t";
+        //     std::cout<<el.getGender()<<"\t";
+        //     std::cout<<"\n";
+        // }
         
-//     }
-    
-// }
+    }
+      std::cout<<"ssss";
+}
 
 // Student University::SearchByName(const std::string &surname)
 // {

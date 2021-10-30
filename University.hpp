@@ -12,18 +12,19 @@
 
 #include "Student.hpp"
 #include "Person.hpp"
-
+#include "Employee.hpp"
 class University{
 
-// std::vector<Student> student_list_;
+ std::vector<Person*> persons_;
     
-//     public:
-//     University();
-//     University(const std::vector<Student> student_list);
-//     ~University() = default;
+    public:
+    University();
+//     University(const std::vector<Person*> student_list);
+   ~University() = default;
 
+void addPerson(Person &person);
 //     void addStudent(const Student& student);
-//     void DisplayDB();
+    void DisplayDB();
 
 //     Student SearchByName(const std::string &surname);
 //     Student SearchByPesel(const std::string &pesel);
