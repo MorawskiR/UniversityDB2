@@ -8,14 +8,19 @@ int main()
 {
 
 
-    Employee employee;
+    Employee employee("Robol", "2000", "Wroclaw", "76543212345", "Male",9000);
     
-    Student student;
+    Student student("Kamil", "Zdun", "Gdynia", "90876543456", "Male", 12345);
 
+    Employee employee2("Adi", "Panek", "Warsaw", "98765435678", "Male", 1000);
+
+    Student student2("Kahna", "Trabalski", "Poznan","3456789098", "Female",34562);
 
     // std::vector<Person*> persons;
     Person & perEmp = employee;
     Person & perStu = student;
+    Person & perEmp2 = employee2;
+    Person & perStu2 = student2;
 
     // persons.push_back(&employee);
     // persons.push_back(&student);
@@ -23,7 +28,11 @@ int main()
     University university;
     university.addPerson(perStu);
     university.addPerson(perEmp);
+    university.addPerson(perEmp2);
+    university.addPerson(perStu2);
+
     university.DisplayDB();
+    
     // const Student Adam("Adam", "Kowalski", "Gdansk", 123, "00243059988", "Male");
     // const Student Ewa("Ewa", "Nowak", "Poznan", 123, "57080162573", "Female");
     // const Student Rafal("Rafal", "Malinowski", "Wroclaw", 789, "93032497982", "Male");

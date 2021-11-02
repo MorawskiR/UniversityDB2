@@ -29,19 +29,17 @@ void University::DisplayDB()
     else
     {
       persons_[0]->getName();
-        // for (const auto &el : persons_)
-        // {
-        //     std::cout<<el.getName()<<"\t";
-        //     std::cout<<el.getSurname()<<"\t";
-        //     std::cout<<el.getAddress()<<"\t";
-        //     std::cout<<el.getIndex()<<"\t";
-        //     std::cout<<el.getPesel()<<"\t";
-        //     std::cout<<el.getGender()<<"\t";
-        //     std::cout<<"\n";
-        // }
+      persons_[1]->getPesel();
+        for (const auto &el : persons_)
+        {
+            std::cout<<el->getName()<<"\t";
+
+            std::cout<<"\n";
+        }
         
     }
-      std::cout<<"ssss";
+    persons_[0]->getName();
+    persons_[1]->getPesel();
 }
 
 // Student University::SearchByName(const std::string &surname)

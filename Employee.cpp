@@ -3,7 +3,7 @@
 
 Employee::Employee() {
 
-        name_ = "No name";
+        name_ = "No name employee";
         surname_ = "Unknown";
         address_ = "Honolulu";
         pesel_ = "9809890943";
