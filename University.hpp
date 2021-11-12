@@ -11,33 +11,35 @@
 #include <vector>
 
 #include "Student.hpp"
-
+#include "Person.hpp"
+#include "Employee.hpp"
 class University{
 
-std::vector<Student> student_list_;
+ std::vector<Person*> persons_;
     
     public:
     University();
-    University(const std::vector<Student> student_list);
-    ~University() = default;
+//     University(const std::vector<Person*> student_list);
+   ~University() = default;
 
-    void addStudent(const Student& student);
+void addPerson(Person &person);
+//     void addStudent(const Student& student);
     void DisplayDB();
 
-    Student SearchByName(const std::string &surname);
-    Student SearchByPesel(const std::string &pesel);
+//     Student SearchByName(const std::string &surname);
+//     Student SearchByPesel(const std::string &pesel);
 
-    void SortByPesel();
+//     void SortByPesel();
     
-    void RemoveByIndex(const size_t &index);
+//     void RemoveByIndex(const size_t &index);
 
-    std::vector<Student> Test(std::vector<Student>);
+//     std::vector<Student> Test(std::vector<Student>);
 
-    void SaveToFile();
+//     void SaveToFile();
 
-    void ExitProgram();
+//     void ExitProgram();
 
-    std::vector<Student> returnStudentList();
+//     std::vector<Student> returnStudentList();
 
 };
 
